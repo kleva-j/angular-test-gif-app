@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gif-app';
+  currentView = 'HomePage';
+
+  updateView($event) {
+    this.currentView = $event;
+  }
 }

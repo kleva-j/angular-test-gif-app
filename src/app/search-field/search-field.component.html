@@ -8,10 +8,11 @@
                            name="giphy-search"
                            class="form-control"
                            placeholder="type your search here"
+                           [(ngModel)]="input"
                     />
                 </div>
                 <div class="col-md-2">
-                    <button type="submit" class="btn btn-default pull-right">Search</button>
+                    <button type="submit" class="btn btn-default pull-right" (click)="handleSearch($event)">Search</button>  
                 </div>
             </div>
         </form>
