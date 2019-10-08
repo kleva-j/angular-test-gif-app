@@ -1,4 +1,10 @@
-<div>
-    <!-- Implement result list here -->
-    Results List
+<div (window:scroll)="onWindowScroll($event)">
+    <div class="p-4">
+        <span class="badge badge-pill badge-primary m-2 pointer" *ngFor="let q of searchQueries">{{q}}</span>
+    </div>
+    <div class="row">
+        <div *ngFor="let gif of searchResults">
+            <img [attr.data-lazy]="gif.images.original.url" class="col-sm-2 col-md-4" (click)="updateView($event, gif.id)" />
+        </div>
+    </div>
 </div>
