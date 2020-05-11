@@ -24,7 +24,7 @@
     "core-js": "^2.5.4",
     "jquery": "^3.4.1",
     "popper": "^1.0.1",
-    "rxjs": "~6.3.3",
+    "rxjs": "~6.5.5",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26",
     "@ngrx/store-devtools": "^8.0.0"
